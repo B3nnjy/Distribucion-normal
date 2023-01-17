@@ -43,15 +43,15 @@ worker.addEventListener('message', (evt) => {
 function imprimir(bns, num, valueB){
     const doc = new jsPDF();
 
-    doc.addImage("/Integral2.png", 90, 1, 35, 13);
+    doc.addImage("./Integral2.png", 90, 1, 35, 13);
     doc.setFontSize(10);
     doc.setFont("helvetica", "normal", "bold");
     doc.text("a = -6", 10, 13);
     doc.text(`b = ${valueB}`, 10, 8);
     doc.text(`b0(a+(n)(`, 150, 8);
-    doc.addImage("/triangle.png", 165,5, 3,3);
+    doc.addImage("./triangle.png", 165,5, 3,3);
     doc.text(`))  -> bn(b)`, 168, 8);
-    doc.addImage("/triangle.png", 22,10, 3,3);
+    doc.addImage("./triangle.png", 22,10, 3,3);
     doc.text(` = 0.01`, 25, 13);
     doc.setFontSize(8);
     doc.setFont("helvetica", "normal", "normal");
