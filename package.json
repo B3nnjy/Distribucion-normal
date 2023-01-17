@@ -12,6 +12,7 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "jspdf": "^2.5.1"
   }
 }
