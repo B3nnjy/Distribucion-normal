@@ -2,7 +2,7 @@ import { jsPDF } from "jspdf";
 
 const b = document.getElementById('b');
 const btnImprimir = document.getElementById('imprimir');
-const worker = new Worker("./tabla.mjs", {
+const worker = new Worker("tabla.mjs", {
     type: "module"
 });
 const load = document.getElementById('load');
